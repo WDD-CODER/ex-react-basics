@@ -10,6 +10,9 @@ export const appService = {
     remove,
     save,
     getEmptyWatcher,
+    getNextWatcherId,
+    getFilterBy
+
 }
 
 function query() {
@@ -47,6 +50,20 @@ function getEmptyWatcher(fullName = '', movies = []) {
     }
 }
 
+function getFilterBy() {
+    return { txt: '', minSpeed: 0 }
+}
+
+
+
+function getNextWatcherId(carId) {
+    return storageService.query(CAR_KEY)
+        .then(cars => {
+            var idx = cars.findIndex(car => car.id === carId)
+            if (idx === cars.length - 1) idx = -1
+            return cars[idx + 1].id
+        })
+}
 
 function _createWatchers() {
     let watchers = utilService.loadFromStorage(APP_KEY)
