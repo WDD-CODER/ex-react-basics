@@ -24,7 +24,7 @@ export function MouseMonitorIndex() {
 
     function pauseMouse() {
         setIsOn(prevIsOn => !prevIsOn)
-        if (isOn) screen.current.setAttribute('hidden', '')
+        if (prevIsOn) screen.current.setAttribute('hidden', '')
         else screen.current.removeAttribute('hidden', '')
     }
 

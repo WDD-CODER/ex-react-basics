@@ -1,8 +1,8 @@
-import { AnimalList } from './cmps/animalAppCmps/AnimalList.jsx'
-import { SeasonalClock } from './cmps/SeasonalClock.jsx'
-import { CountDown } from './cmps/CountDown.jsx'
-import { WatcherAppIndex } from './cmps/watcherAppCmps/WatcherAppIndex.jsx'
-import { MouseMonitorIndex } from './cmps/mouseMonitorApp/MouseMonitorIndex.jsx'
+import { AnimalList } from './cmps/animal-app-cmps/AnimalList.jsx'
+import { SeasonalClock } from './cmps/seasonal-clock-cmp/SeasonalClock.jsx'
+import { CountDown } from './cmps/count-down-cmp/CountDown.jsx'
+import { WatcherAppIndex } from './cmps/watcher-app-cmps/WatcherAppIndex.jsx'
+import { MouseMonitorIndex } from './cmps/mouse-monitor-app-cmp/MouseMonitorIndex.jsx'
 
 export function RootCmp() {
     const animalInfos = [

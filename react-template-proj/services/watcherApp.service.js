@@ -54,14 +54,12 @@ function getFilterBy() {
     return { txt: '', minSpeed: 0 }
 }
 
-
-
-function getNextWatcherId(carId) {
-    return storageService.query(CAR_KEY)
-        .then(cars => {
-            var idx = cars.findIndex(car => car.id === carId)
-            if (idx === cars.length - 1) idx = -1
-            return cars[idx + 1].id
+function getNextWatcherId(WatcherId) {
+    return storageService.query(APP_KEY)
+        .then(Watchers => {
+            var idx = Watchers.findIndex(Watcher => Watcher.id === WatcherId)
+            if (idx === Watchers.length - 1) idx = -1
+            return Watchers[idx + 1].id
         })
 }
 

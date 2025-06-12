@@ -20,6 +20,8 @@ export function CountDown({ startFrom, onDone, toTime }) {
             })
         }, 1000);
 
+        return () => clearInterval(intervalIdRef.current)
+
     }, []);
 
 

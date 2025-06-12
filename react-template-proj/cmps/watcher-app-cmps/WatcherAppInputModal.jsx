@@ -1,4 +1,3 @@
-import { appService } from '../../services/watcherApp.service.js'
 const { useState, useEffect, } = React;
 
 export function WatcherAppInputModal({ onAddUser }) {

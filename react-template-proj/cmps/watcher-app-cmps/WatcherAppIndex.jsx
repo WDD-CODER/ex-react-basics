@@ -25,7 +25,7 @@ export function WatcherAppIndex() {
 
     function onRemoveWatcher(watcherId) {
         appService.remove(watcherId)
-            .then(setWatchersArray(watchers.filter(watcher => watcher.id !== watcherId)))
+            .then(() => setWatchersArray(watchers.filter(watcher => watcher.id !== watcherId)))
             .catch(err => console.log('Problem deleting from watcher local storage', err))
     }
 
