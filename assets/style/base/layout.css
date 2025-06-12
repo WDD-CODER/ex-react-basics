@@ -10,4 +10,9 @@
   margin: auto;
 }
 
-
+.main-root-layout{
+  display:  grid;
+    margin: 2em;
+    gap: 1em;
+    justify-items: center;
+}

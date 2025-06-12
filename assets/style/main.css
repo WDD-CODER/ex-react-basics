@@ -1,20 +1,17 @@
 /* Setup */
-@import "setup/vars.css";
-@import "setup/typography.css";
+@import '/assets/style/setup/vars.css';
+@import '/assets/style/setup/typography.css';
 
 /* Base */
-@import "base/base.css";
-@import "base/helpers.css";
-@import "base/layout.css";
-@import "base/forms.css";
-
-/* Pages */
-@import "pages/home.css";
+@import '/assets/style/base/base.css';
+@import '/assets/style/base/layout.css';
+@import '/assets/style/base/helpers.css';
 
 /* Components */
-@import "cmps/app-header.css";
-@import "cmps/animal-list.css";
-@import "cmps/season-clock.css";
-@import "cmps/count-down.css";
-@import "cmps/watcher-app.css";
-@import "cmps/mouse-monitor.css";
+@import '/assets/style/cmps/app-header.css';
+@import '/assets/style/cmps/animal-list.css';
+@import '/assets/style/cmps/count-down.css';
+@import '/assets/style/cmps/mouse-monitor.css';
+@import '/assets/style/cmps/season-clock.css';
+@import '/assets/style/cmps/user-msg.css';
+@import '/assets/style/cmps/watcher-app.css';
